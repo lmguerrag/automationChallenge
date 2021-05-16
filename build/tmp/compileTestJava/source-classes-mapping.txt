@@ -1,0 +1,6 @@
+co/com/sofka/TestRunnerLogin.java
+ co.com.sofka.TestRunnerLogin
+co/com/sofka/TestRunnerAddToCart.java
+ co.com.sofka.TestRunnerAddToCart
+co/com/sofka/TestRunnerSuccessfulPurchase.java
+ co.com.sofka.TestRunnerSuccessfulPurchase

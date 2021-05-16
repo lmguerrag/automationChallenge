@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="co.com.sofka.TestRunnerSuccessfulPurchase" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-16T02:41:19" hostname="DESKTOP-7NVI6VL" time="13.655">
+  <properties/>
+  <testcase name="Compra exitosa" classname="co.com.sofka.TestRunnerSuccessfulPurchase" time="13.655"/>
+  <system-out><![CDATA[[Test worker] INFO  co.com.sofka.pages.LoginPage  - Ingresando username...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Ingresando password...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - click en el boton login...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Click en el boton Add to cart...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Click en el carrito...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Click en el boton checkout...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Ingresando firstName...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Ingresando lasttName...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Ingresando postalCode...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Click en el boton continue...
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 6501
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 15, 2021 9:41:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+?[32m?[1m??[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m??[0m
+?[32m?[1m??[0m Activate publishing with one of the following:                                    ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m Environment variable:                            ?[36mCUCUMBER_PUBLISH_ENABLED?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m JUnit:                                           ?[36m@CucumberOptions?[0m(publish = ?[36mtrue?[0m) ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m More information at ?[36mhttps://reports.cucumber.io/docs/cucumber-jvm?[0m                 ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m Disable this message with one of the following:                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+]]></system-err>
+</testsuite>
