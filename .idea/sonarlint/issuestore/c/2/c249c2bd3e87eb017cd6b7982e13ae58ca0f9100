@@ -1,5 +1,9 @@
 
-P
-java:S3416".Update this logger to use "ProductPage.class".(˜ëÒºşÿÿÿÿ8¤‹‘—/
 L
 java:S1068"*Remove this unused "driver" private field.(š…ŒÅøÿÿÿÿ8ÎÈ„—/
+P
+java:S1128"4Remove this unused import 'org.apache.log4j.Logger'.(ñè½8âı®»—/
+d
+java:S1128"BRemove this unused import 'org.apache.log4j.PropertyConfigurator'.(ëó°³úÿÿÿÿ8Œ²»—/
+Z
+java:S1128"8Remove this unused import 'org.apache.log4j.LogManager'.(Øê˜Ìüÿÿÿÿ8ãı®»—/

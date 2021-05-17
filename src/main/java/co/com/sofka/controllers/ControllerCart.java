@@ -7,10 +7,13 @@ import co.com.sofka.pages.cartPages.InformationPage;
 import co.com.sofka.pages.cartPages.OverviewPage;
 import co.com.sofka.utils.others.ScreenCapture;
 import com.github.javafaker.Faker;
+import org.apache.hc.core5.util.Asserts;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ControllerCart {
 
@@ -52,10 +55,13 @@ public class ControllerCart {
         infoLogger.info("Click en el boton Finish...");
         overviewPage.clickFinishBtn();
         screenCapture.takeScreen("testCaseSuccessfulPurchase","3.CompletePageScreen.png");
+
     }
 
-    public String testCaseSuccessfulPurchaseResult(){
+    public void TestCaseSuccessfulPurchaseResult(){
         completePage = new CompletePage(driver);
-        return completePage.getCompleteMessage();
+        completePage.getCompleteMessage();
+
     }
+
 }

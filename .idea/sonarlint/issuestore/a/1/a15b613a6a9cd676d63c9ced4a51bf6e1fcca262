@@ -1,7 +1,15 @@
 
-Y
-java:S1128"<Remove this unused import 'org.apache.commons.io.FileUtils'.(À¿Ù´8Ó¥¦‡—/
-b
-java:S1128"@Remove this unused import 'org.openqa.selenium.TakesScreenshot'.(ç³Üÿÿÿÿÿ8Ó¥¦‡—/
-]
-java:S1128";Remove this unused import 'org.openqa.selenium.OutputType'.(Ğ³—õıÿÿÿÿ8Ó¥¦‡—/
+T
+java:S3416"2Update this logger to use "ControllerLogin.class".(˜ëÒºşÿÿÿÿ8ï¡âº—/
+R
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8ĞòŸ¹—/
+\
+java:S1128":Remove this unused import 'ru.yandex.qatools.ashot.AShot'.(•—ïÊıÿÿÿÿ8ĞòŸ¹—/
+O
+java:S1128"2Remove this unused import 'javax.imageio.ImageIO'.(‘çÔû8ĞòŸ¹—/
+F
+java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å8ĞòŸ¹—/
+a
+java:S1128"?Remove this unused import 'ru.yandex.qatools.ashot.Screenshot'.(½¢±üÿÿÿÿ8ĞòŸ¹—/
+m
+java:S1128"PRemove this unused import 'ru.yandex.qatools.ashot.shooting.ShootingStrategies'.(¸Ğ•ì8ĞòŸ¹—/
