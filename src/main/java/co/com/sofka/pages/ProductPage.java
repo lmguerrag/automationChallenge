@@ -13,7 +13,6 @@ import java.util.List;
 public class ProductPage {
 
     private WebDriver driver;
-    private static Logger infoLogger = LogManager.getLogger(LoginPage.class);
 
     public ProductPage(WebDriver driver){
         PageFactory.initElements(driver, this);
@@ -25,18 +24,16 @@ public class ProductPage {
     @FindBy(className = "shopping_cart_link")
     WebElement cartBtn;
 
-    private void logConfigSetUp(){
-        PropertyConfigurator.configure("src/main/resources/logConfig/log4j.properties");
-    }
-
     public void clickAddToCartBtn(int index){
-        logConfigSetUp();
-        infoLogger.info("Click en el boton Add to cart...");
         productBtnList.get(index - 1).click();
     }
 
     public void clickCartBtn(){
-        infoLogger.info("Click en el carrito...");
         cartBtn.click();
+    }
+
+    public void addProductSuccess(){
+        clickAddToCartBtn(4);
+        clickCartBtn();
     }
 }

@@ -22,12 +22,12 @@ public class AddToCartStep {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://www.saucedemo.com/");
+        ControllerLogin controllerLogin = new ControllerLogin(driver);
+        controllerLogin.loginSuccess();
 
     }
     @When("agrega uno o mas productos")
     public void agrega_uno_o_mas_productos() {
-        ControllerLogin controllerLogin = new ControllerLogin(driver);
-        controllerLogin.testCaseLoginSuccess();
         ControllerProduct controllerProduct = new ControllerProduct(driver);
         controllerProduct.testCaseAddToCart();
     }

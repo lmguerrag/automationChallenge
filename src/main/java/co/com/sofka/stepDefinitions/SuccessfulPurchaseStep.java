@@ -1,13 +1,13 @@
 package co.com.sofka.stepDefinitions;
 
 import co.com.sofka.controllers.ControllerCart;
-import co.com.sofka.controllers.ControllerCheckout;
 import co.com.sofka.controllers.ControllerLogin;
 import co.com.sofka.controllers.ControllerProduct;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.hc.core5.util.Asserts;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -26,25 +26,23 @@ public class SuccessfulPurchaseStep {
         driver.get("https://www.saucedemo.com/");
 
         ControllerLogin controllerLogin = new ControllerLogin(driver);
-        controllerLogin.testCaseLoginSuccess();
+        controllerLogin.loginSuccess();
     }
     @Given("agrego productos al carrito")
     public void agregoProductosAlCarrito() {
         ControllerProduct controllerProduct = new ControllerProduct(driver);
-        controllerProduct.testCaseAddToCart();
+        controllerProduct.addSuccess();
     }
-    @When("quiera validar su compra")
-    public void quieraValidarSuCompra() {
+    @When("valide sus datos")
+    public void valideSusDatos() {
         ControllerCart controllerCart = new ControllerCart(driver);
-        controllerCart.checkoutPurchase();
+        controllerCart.testCaseSuccessfulPurchase();
     }
-    @When("ingrese sus datos")
-    public void ingreseSusDatos() {
-        ControllerCheckout controllerCheckout = new ControllerCheckout(driver);
-        controllerCheckout.testCaseSuccessfulPurchase();
-    }
-    @Then("su compra es exitosa")
-    public void suCompraEsExitosa() {
 
+    @Then("su compra fue completada")
+    public void suCompraFueCompletada() {
+        ControllerCart controllerCart = new ControllerCart(driver);
     }
+
 }
+

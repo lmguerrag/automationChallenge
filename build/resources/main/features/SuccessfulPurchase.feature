@@ -1,11 +1,10 @@
-Feature: Comprar un producto
+Feature: Compra exitosa
 
   As un cliente
-  I want poder comprar productos en la tienda
+  I want comprar productos
 
-  Scenario: Compra exitosa
+  Scenario: comprar un producto
     Given un cliente quiere comprar productos
     And agrego productos al carrito
-    When quiera validar su compra
-    And ingrese sus datos
-    Then su compra es exitosa
+    When valide sus datos
+    Then su compra fue completada

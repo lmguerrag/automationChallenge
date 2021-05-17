@@ -1,5 +1,6 @@
-package co.com.sofka.pages;
+package co.com.sofka.pages.cartPages;
 
+import co.com.sofka.pages.LoginPage;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -10,12 +11,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.nio.file.WatchEvent;
 
-public class CheckoutPage {
+public class InformationPage {
 
     private WebDriver driver;
-    private static Logger infoLogger = LogManager.getLogger(LoginPage.class);
 
-    public CheckoutPage(WebDriver driver){
+    public InformationPage(WebDriver driver){
         PageFactory.initElements(driver, this);
     }
 
@@ -31,28 +31,19 @@ public class CheckoutPage {
     @FindBy(id = "continue")
     WebElement continueBtn;
 
-    private void logConfigSetUp(){
-        PropertyConfigurator.configure("src/main/resources/logConfig/log4j.properties");
-    }
-
     public void setFirstNameField(String firstName){
-        logConfigSetUp();
-        infoLogger.info("Ingresando firstName...");
         firstNameField.sendKeys(firstName);
     }
 
     public void setLastNameField(String lastName){
-        infoLogger.info("Ingresando lasttName...");
         lastNameField.sendKeys(lastName);
     }
 
     public void setPostalField(String postal){
-        infoLogger.info("Ingresando postalCode...");
         postalField.sendKeys(postal);
     }
 
     public void clickContinueBtn(){
-        infoLogger.info("Click en el boton continue...");
         continueBtn.click();
     }
 

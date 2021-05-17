@@ -1,5 +1,6 @@
-package co.com.sofka.pages;
+package co.com.sofka.pages.cartPages;
 
+import co.com.sofka.pages.LoginPage;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -11,7 +12,6 @@ import org.openqa.selenium.support.PageFactory;
 public class CartPage {
 
     private WebDriver driver;
-    private static Logger infoLogger = LogManager.getLogger(LoginPage.class);
 
     public CartPage(WebDriver driver){
         PageFactory.initElements(driver, this);
@@ -20,13 +20,7 @@ public class CartPage {
     @FindBy(id = "checkout")
     WebElement checkoutBtn;
 
-    private void logConfigSetUp(){
-        PropertyConfigurator.configure("src/main/resources/logConfig/log4j.properties");
-    }
-
     public void clickCheckoutBtn(){
-        logConfigSetUp();
-        infoLogger.info("Click en el boton checkout...");
         checkoutBtn.click();
     }
 }

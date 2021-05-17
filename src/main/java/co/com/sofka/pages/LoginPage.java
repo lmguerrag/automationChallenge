@@ -11,8 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 
     private WebDriver driver;
-    private static Logger infoLogger = LogManager.getLogger(LoginPage.class);
-
+    //private static Logger infoLogger = LogManager.getLogger(LoginPage.class);
 
     public LoginPage(WebDriver driver){
         PageFactory.initElements(driver, this);
@@ -27,23 +26,15 @@ public class LoginPage {
     @FindBy(id = "login-button")
     WebElement loginBtn;
 
-    public void logConfigSetUp(){
-        PropertyConfigurator.configure("src/main/resources/logConfig/log4j.properties");
-    }
-
     public void setUsernameField(String username){
-        logConfigSetUp();
-        infoLogger.info("Ingresando username...");
         usernameField.sendKeys(username);
     }
 
     public void setPasswordField(String password){
-        infoLogger.info("Ingresando password...");
         passwordField.sendKeys(password);
     }
 
     public void clickLoginBtn(){
-        infoLogger.info("click en el boton login...");
         loginBtn.click();
     }
 
