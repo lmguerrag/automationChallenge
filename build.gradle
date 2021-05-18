@@ -21,6 +21,7 @@ dependencies {
 
     // https://mvnrepository.com/artifact/io.cucumber/cucumber-java
     implementation group: 'io.cucumber', name: 'cucumber-java', version: '6.10.3'
+    implementation 'org.projectlombok:lombok:1.18.16'
 
     // https://mvnrepository.com/artifact/io.cucumber/cucumber-junit
     testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '6.10.3'

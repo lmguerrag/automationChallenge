@@ -1,6 +1,6 @@
 package co.com.sofka.utils.database;
 
-import co.com.sofka.dto.UserDTO;
+import co.com.sofka.dto.ClientDTO;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -16,19 +16,20 @@ public class Mapper {
         connect = new Connect();
     }
 
-    public List<UserDTO> createDTO(){
-        List<UserDTO> clientList = new ArrayList<>();
-        String query = "select username, pass from login_data";
+    public List<ClientDTO> createDTO(){
+        List<ClientDTO> clientList = new ArrayList<>();
+        String query = "select first_name, last_name, postal_code from client_data ";
 
         try {
             Statement statement = connect.connection.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
 
             while (resultSet.next()){
-                UserDTO clientDTO = new UserDTO();
+                ClientDTO clientDTO = new ClientDTO();
 
-                clientDTO.setUsername(resultSet.getString("username"));
-                clientDTO.setPassword(resultSet.getString("pass"));
+                clientDTO.setFirstName(resultSet.getString("first_name"));
+                clientDTO.setLastName(resultSet.getString("last_name"));
+                clientDTO.setPostalCode(resultSet.getString("postal_code"));
 
                 clientList.add(clientDTO);
             }

@@ -2,31 +2,31 @@ co/com/sofka/pages/ProductPage.java
  co.com.sofka.pages.ProductPage
 co/com/sofka/pages/cartPages/InformationPage.java
  co.com.sofka.pages.cartPages.InformationPage
-co/com/sofka/stepDefinitions/SuccessfulPurchaseStep.java
- co.com.sofka.stepDefinitions.SuccessfulPurchaseStep
+co/com/sofka/dto/ClientDTO.java
+ co.com.sofka.dto.ClientDTO
 co/com/sofka/utils/database/Connect.java
  co.com.sofka.utils.database.Connect
-co/com/sofka/stepDefinitions/LoginStep.java
- co.com.sofka.stepDefinitions.LoginStep
-co/com/sofka/dto/UserDTO.java
- co.com.sofka.dto.UserDTO
-co/com/sofka/controllers/ControllerLogin.java
- co.com.sofka.controllers.ControllerLogin
-co/com/sofka/utils/database/Mapper.java
- co.com.sofka.utils.database.Mapper
-co/com/sofka/pages/cartPages/CartPage.java
- co.com.sofka.pages.cartPages.CartPage
-co/com/sofka/pages/cartPages/OverviewPage.java
- co.com.sofka.pages.cartPages.OverviewPage
-co/com/sofka/utils/others/ScreenCapture.java
- co.com.sofka.utils.others.ScreenCapture
-co/com/sofka/pages/cartPages/CompletePage.java
- co.com.sofka.pages.cartPages.CompletePage
-co/com/sofka/controllers/ControllerProduct.java
- co.com.sofka.controllers.ControllerProduct
-co/com/sofka/controllers/ControllerCart.java
- co.com.sofka.controllers.ControllerCart
-co/com/sofka/stepDefinitions/AddToCartStep.java
- co.com.sofka.stepDefinitions.AddToCartStep
 co/com/sofka/pages/LoginPage.java
  co.com.sofka.pages.LoginPage
+co/com/sofka/pages/cartPages/CompletePage.java
+ co.com.sofka.pages.cartPages.CompletePage
+co/com/sofka/utils/database/Mapper.java
+ co.com.sofka.utils.database.Mapper
+co/com/sofka/utils/others/ScreenCapture.java
+ co.com.sofka.utils.others.ScreenCapture
+co/com/sofka/pages/cartPages/OverviewPage.java
+ co.com.sofka.pages.cartPages.OverviewPage
+co/com/sofka/pages/cartPages/CartPage.java
+ co.com.sofka.pages.cartPages.CartPage
+co/com/sofka/controllers/ControllerCart.java
+ co.com.sofka.controllers.ControllerCart
+co/com/sofka/stepDefinitions/SuccessfulPurchaseStep.java
+ co.com.sofka.stepDefinitions.SuccessfulPurchaseStep
+co/com/sofka/controllers/ControllerProduct.java
+ co.com.sofka.controllers.ControllerProduct
+co/com/sofka/stepDefinitions/AddToCartStep.java
+ co.com.sofka.stepDefinitions.AddToCartStep
+co/com/sofka/stepDefinitions/LoginStep.java
+ co.com.sofka.stepDefinitions.LoginStep
+co/com/sofka/controllers/ControllerLogin.java
+ co.com.sofka.controllers.ControllerLogin

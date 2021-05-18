@@ -24,6 +24,9 @@ public class ProductPage {
     @FindBy(className = "shopping_cart_link")
     WebElement cartBtn;
 
+    @FindBy(className = "title")
+    WebElement titlePage;
+
     public void clickAddToCartBtn(int index){
         productBtnList.get(index - 1).click();
     }
@@ -35,5 +38,9 @@ public class ProductPage {
     public void addProductSuccess(){
         clickAddToCartBtn(4);
         clickCartBtn();
+    }
+
+    public String getTitlePage(){
+        return titlePage.getText();
     }
 }

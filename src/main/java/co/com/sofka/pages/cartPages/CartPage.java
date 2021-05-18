@@ -20,7 +20,14 @@ public class CartPage {
     @FindBy(id = "checkout")
     WebElement checkoutBtn;
 
+    @FindBy(className = "inventory_item_name")
+    WebElement productName;
+
     public void clickCheckoutBtn(){
         checkoutBtn.click();
+    }
+
+    public String getProductName(){
+        return productName.getText();
     }
 }

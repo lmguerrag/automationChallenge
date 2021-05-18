@@ -2,11 +2,15 @@ package co.com.sofka.controllers;
 
 import co.com.sofka.pages.LoginPage;
 import co.com.sofka.pages.ProductPage;
+import co.com.sofka.pages.cartPages.CartPage;
 import co.com.sofka.utils.others.ScreenCapture;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ControllerProduct {
 
@@ -27,7 +31,6 @@ public class ControllerProduct {
         infoLogger.info("Click en el carrito...");
         productPage.clickCartBtn();
         screenCapture.takeScreen("testCaseAddToCart","2.CartPageScreen.png");
-
     }
 
     public void addSuccess(){
@@ -36,5 +39,17 @@ public class ControllerProduct {
 
         infoLogger.info("Agregando productos al carrito...");
         productPage.addProductSuccess();
+    }
+
+    public void validateTestCaseAddToCart(){
+        infoLogger.info("Comparando resultados...");
+        try{
+            CartPage cartPage = new CartPage(driver);
+            assertEquals("Sauce Labs Bolt T-Shirt", cartPage.getProductName());
+        } catch (NoSuchElementException exception) {
+            infoLogger.error("ERROR, NO SE ENCONTRO EL ELEMENTO");
+            exception.printStackTrace();
+        }
+
     }
 }
