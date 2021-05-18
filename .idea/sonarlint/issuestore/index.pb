@@ -31,8 +31,6 @@ v
 Fsrc/main/java/co/com/sofka/stepDefinitions/SuccessfulPurchaseStep.java,2\4\2486a6da4e0bfb011ae4b88ac04e0bac7ef9ae69
 ;
 loggers.log,7\1\71b65607794c14f0760e17f8b25c121e8bdca968
-[
-+src/main/java/co/com/sofka/dto/UserDTO.java,7\6\763b838b7ffde591f640025dfe5ef3519591b0be
 j
 :src/main/java/co/com/sofka/utils/others/ScreenCapture.java,a\a\aa2615c63f5162d285a5131188977b018c92498f
 h
@@ -43,3 +41,5 @@ l
 <src/main/java/co/com/sofka/pages/cartPages/OverviewPage.java,c\c\cc82eb3fcd53b52d210deacf232c6089d0fcd45c
 l
 <src/main/java/co/com/sofka/pages/cartPages/CompletePage.java,a\f\af2b9bce9f70aa9df2dea3b2b6ac24f405dbe69e
+]
+-src/main/java/co/com/sofka/dto/ClientDTO.java,9\5\95a08b574ff1700efeb82cbda9247b478c3bce21

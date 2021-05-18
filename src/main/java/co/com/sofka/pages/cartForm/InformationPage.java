@@ -1,15 +1,9 @@
-package co.com.sofka.pages.cartPages;
+package co.com.sofka.pages.cartForm;
 
-import co.com.sofka.pages.LoginPage;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import java.nio.file.WatchEvent;
 
 public class InformationPage {
 

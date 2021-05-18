@@ -1,15 +1,15 @@
 package co.com.sofka.controllers;
 
 import co.com.sofka.dto.ClientDTO;
+import co.com.sofka.pages.HomePage;
 import co.com.sofka.pages.LoginPage;
-import co.com.sofka.pages.cartPages.CartPage;
-import co.com.sofka.pages.cartPages.CompletePage;
-import co.com.sofka.pages.cartPages.InformationPage;
-import co.com.sofka.pages.cartPages.OverviewPage;
+import co.com.sofka.pages.cartForm.CartPage;
+import co.com.sofka.pages.cartForm.CompletePage;
+import co.com.sofka.pages.cartForm.InformationPage;
+import co.com.sofka.pages.cartForm.OverviewPage;
 import co.com.sofka.utils.database.Mapper;
 import co.com.sofka.utils.others.ScreenCapture;
 import com.github.javafaker.Faker;
-import org.apache.hc.core5.util.Asserts;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -70,6 +70,23 @@ public class ControllerCart {
         infoLogger.info("Click en el boton Finish...");
         overviewPage.clickFinishBtn();
         screenCapture.takeScreen("testCaseSuccessfulPurchase","3.CompletePageScreen.png");
+    }
+
+    public void testCaseRemoveProductFromTheCart(){
+        PropertyConfigurator.configure("src/main/resources/logConfig/log4j.properties");
+        ScreenCapture screenCapture = new ScreenCapture(driver);
+        CartPage cartPage = new CartPage(driver);
+
+        screenCapture.takeScreen("testCaseRemove","1.CartPageScreenBefore.png");
+        infoLogger.info("Click en el boton remove...");
+        cartPage.clickRemoveBtn();
+        screenCapture.takeScreen("testCaseRemove","2.CartPageScreenAfter.png");
+    }
+
+    public void validateTestCaseRemove(){
+        infoLogger.info("Comprobando resultados...");
+        CartPage cartPage = new CartPage(driver);
+        assertEquals("removed_cart_item", cartPage.getProductRemoveAttribute());
     }
 
     private void getInfoFromFakerData(){

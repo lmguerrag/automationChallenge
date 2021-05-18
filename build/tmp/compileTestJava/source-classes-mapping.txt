@@ -4,3 +4,7 @@ co/com/sofka/TestRunnerSuccessfulPurchase.java
  co.com.sofka.TestRunnerSuccessfulPurchase
 co/com/sofka/TestRunnerAddToCart.java
  co.com.sofka.TestRunnerAddToCart
+co/com/sofka/TestRunnerLogout.java
+ co.com.sofka.TestRunnerLogout
+co/com/sofka/TestRunnerRemove.java
+ co.com.sofka.TestRunnerRemove

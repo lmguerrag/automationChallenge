@@ -1,22 +1,22 @@
-package co.com.sofka.pages.cartPages;
+package co.com.sofka.pages.cartForm;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CompletePage {
+public class OverviewPage {
 
     private WebDriver driver;
 
-    public CompletePage(WebDriver driver){
+    public OverviewPage(WebDriver driver){
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(className = "complete-header")
-    WebElement completeMessage;
+    @FindBy(id = "finish")
+    WebElement finishBtn;
 
-    public String getCompleteMessage(){
-        return completeMessage.getText();
+    public void clickFinishBtn(){
+        finishBtn.click();
     }
 }

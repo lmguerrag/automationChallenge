@@ -1,0 +1,11 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¿‚’É8ä—ð×—/
+d
+java:S1128"BRemove this unused import 'org.apache.log4j.PropertyConfigurator'.(ëó°³úÿÿÿÿ8ÄÆ›æ—/
+Z
+java:S1128	"8Remove this unused import 'org.apache.log4j.LogManager'.(Øê˜Ìüÿÿÿÿ8éÙ›æ—/
+U
+java:S1128"9Remove this unused import 'co.com.sofka.pages.LoginPage'.(ëõÿ48éÙ›æ—/
+P
+java:S1128
+"4Remove this unused import 'org.apache.log4j.Logger'.(ñè½8éÙ›æ—/

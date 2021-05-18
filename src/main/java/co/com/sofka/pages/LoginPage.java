@@ -38,6 +38,10 @@ public class LoginPage {
         loginBtn.click();
     }
 
+    public String getLoginBtnText(){
+        return loginBtn.getAttribute("value");
+    }
+
     public void loginSuccessful(){
         try {
             setUsernameField("standard_user");

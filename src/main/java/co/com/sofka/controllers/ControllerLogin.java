@@ -1,7 +1,7 @@
 package co.com.sofka.controllers;
 
 import co.com.sofka.pages.LoginPage;
-import co.com.sofka.pages.ProductPage;
+import co.com.sofka.pages.HomePage;
 import co.com.sofka.utils.others.ScreenCapture;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -35,7 +35,7 @@ public class ControllerLogin {
 
         infoLogger.info("Click en el boton login...");
         loginPage.clickLoginBtn();
-        screenCapture.takeScreen("testCaseLogin\\" + userType,"2.ProductPageScreen.png");
+        screenCapture.takeScreen("testCaseLogin\\" + userType,"2.HomePageScreen.png");
     }
 
     public void loginSuccess(){
@@ -49,8 +49,8 @@ public class ControllerLogin {
     public void validateTestCaseLoginSuccess(){
         infoLogger.info("Comparando resultados...");
         try{
-            ProductPage productPage = new ProductPage(driver);
-            assertEquals("PRODUCTS", productPage.getTitlePage());
+            HomePage homePage = new HomePage(driver);
+            assertEquals("PRODUCTS", homePage.getTitlePage());
         } catch (NoSuchElementException exception) {
             infoLogger.error("ERROR, EL USUARIO NO PUDO ACCEDER, POR LO QUE NO SE ENCONTRO EL ELEMENTO");
             exception.printStackTrace();

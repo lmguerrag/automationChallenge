@@ -1,9 +1,5 @@
-package co.com.sofka.pages.cartPages;
+package co.com.sofka.pages.cartForm;
 
-import co.com.sofka.pages.LoginPage;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,11 +19,25 @@ public class CartPage {
     @FindBy(className = "inventory_item_name")
     WebElement productName;
 
+    @FindBy(css = "button[id*='remove']")
+    WebElement removeBtn;
+
+    @FindBy(className = "removed_cart_item")
+    WebElement productRemoved;
+
     public void clickCheckoutBtn(){
         checkoutBtn.click();
     }
 
+    public void clickRemoveBtn(){
+        removeBtn.click();
+    }
+
     public String getProductName(){
         return productName.getText();
+    }
+
+    public String getProductRemoveAttribute(){
+        return productRemoved.getAttribute("class");
     }
 }
