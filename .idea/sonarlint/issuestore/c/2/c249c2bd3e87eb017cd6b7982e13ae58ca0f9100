@@ -1,9 +1,0 @@
-
-d
-java:S1128"BRemove this unused import 'org.apache.log4j.PropertyConfigurator'.(ëó°³úÿÿÿÿ8Œ²»—/
-L
-java:S1068"*Remove this unused "driver" private field.(š…ŒÅøÿÿÿÿ8ÎÈ„—/
-Z
-java:S1128"8Remove this unused import 'org.apache.log4j.LogManager'.(Øê˜Ìüÿÿÿÿ8ãı®»—/
-P
-java:S1128"4Remove this unused import 'org.apache.log4j.Logger'.(ñè½8âı®»—/

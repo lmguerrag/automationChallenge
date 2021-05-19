@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.com.sofka.TestRunnerLogin" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-05-19T04:11:25" hostname="DESKTOP-7NVI6VL" time="58.341">
+<testsuite name="co.com.sofka.TestRunnerLogin" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-05-19T18:11:20" hostname="DESKTOP-7NVI6VL" time="65.646">
   <properties/>
-  <testcase name="Login success #1" classname="co.com.sofka.TestRunnerLogin" time="10.576"/>
-  <testcase name="Login success #2" classname="co.com.sofka.TestRunnerLogin" time="11.942"/>
-  <testcase name="Login success #3" classname="co.com.sofka.TestRunnerLogin" time="15.149"/>
-  <testcase name="Locked user login" classname="co.com.sofka.TestRunnerLogin" time="10.401"/>
-  <testcase name="Login fail" classname="co.com.sofka.TestRunnerLogin" time="10.272"/>
+  <testcase name="Login success #1" classname="co.com.sofka.TestRunnerLogin" time="12.029"/>
+  <testcase name="Login success #2" classname="co.com.sofka.TestRunnerLogin" time="12.985"/>
+  <testcase name="Login success #3" classname="co.com.sofka.TestRunnerLogin" time="19.527"/>
+  <testcase name="Locked user login" classname="co.com.sofka.TestRunnerLogin" time="10.549"/>
+  <testcase name="Login fail" classname="co.com.sofka.TestRunnerLogin" time="10.555"/>
   <system-out><![CDATA[[Test worker] INFO  co.com.sofka.pages.LoginPage  - INICIANDO LOGIN STANDARD TEST...
 [Test worker] INFO  co.com.sofka.pages.LoginPage  - Ingresando username...
 [Test worker] INFO  co.com.sofka.pages.LoginPage  - Ingresando password...
@@ -32,35 +32,35 @@
 [Test worker] INFO  co.com.sofka.pages.LoginPage  - Click en el boton login...
 [Test worker] INFO  co.com.sofka.pages.LoginPage  - Comparando resultados...
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 23820
+  <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 17910
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 18, 2021 11:11:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 19, 2021 1:11:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 6484
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 3076
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 18, 2021 11:11:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 19, 2021 1:11:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 24049
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 22024
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 18, 2021 11:11:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 19, 2021 1:11:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 36396
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 6551
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 18, 2021 11:12:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 19, 2021 1:12:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 34422
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 9362
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 18, 2021 11:12:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 19, 2021 1:12:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
 ?[32m?[1m??[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m??[0m

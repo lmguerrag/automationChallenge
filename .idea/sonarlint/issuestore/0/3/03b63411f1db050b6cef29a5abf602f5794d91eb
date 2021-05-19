@@ -1,7 +1,12 @@
 
-o	java:S100%"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍØ²øÿÿÿÿ8†«Êå—/
-j	java:S100*"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çà‚Í8†«Êå—/
-o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ªÔğøÿÿÿÿ8†«Êå—/
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ªÔğøÿÿÿÿ8†«Êå—/
+j	java:S100."NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çà‚Í8†«Êå—/
 v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¿‚’É8†«Êå—/
+o	java:S100)"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍØ²øÿÿÿÿ8†«Êå—/
 R
-java:S3416"0Update this logger to use "AddToCartStep.class".(˜ëÒºşÿÿÿÿ8¶è•æ—/
+java:S3416"0Update this logger to use "AddToCartStep.class".(˜ëÒºşÿÿÿÿ8¶è•æ—/
+`
+java:S1128"DRemove this unused import 'org.openqa.selenium.chrome.ChromeDriver'.(†È8¥øß˜/
+c
+java:S1128
+"FRemove this unused import 'io.github.bonigarcia.wdm.WebDriverManager'.(°Ëõ‰8¥øß˜/

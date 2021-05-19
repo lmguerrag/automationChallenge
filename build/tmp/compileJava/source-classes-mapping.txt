@@ -16,23 +16,25 @@ co/com/sofka/utils/others/ScreenCapture.java
  co.com.sofka.utils.others.ScreenCapture
 co/com/sofka/pages/cartForm/OverviewPage.java
  co.com.sofka.pages.cartForm.OverviewPage
-co/com/sofka/pages/HomePage.java
- co.com.sofka.pages.HomePage
-co/com/sofka/pages/LoginPage.java
- co.com.sofka.pages.LoginPage
-co/com/sofka/controllers/ControllerLogin.java
- co.com.sofka.controllers.ControllerLogin
-co/com/sofka/stepDefinitions/AddToCartStep.java
- co.com.sofka.stepDefinitions.AddToCartStep
-co/com/sofka/stepDefinitions/LoginStep.java
- co.com.sofka.stepDefinitions.LoginStep
-co/com/sofka/controllers/ControllerHome.java
- co.com.sofka.controllers.ControllerHome
-co/com/sofka/stepDefinitions/LogoutStep.java
- co.com.sofka.stepDefinitions.LogoutStep
-co/com/sofka/stepDefinitions/PurchaseStep.java
- co.com.sofka.stepDefinitions.PurchaseStep
 co/com/sofka/controllers/ControllerCart.java
  co.com.sofka.controllers.ControllerCart
+co/com/sofka/pages/LoginPage.java
+ co.com.sofka.pages.LoginPage
+co/com/sofka/stepDefinitions/LoginStep.java
+ co.com.sofka.stepDefinitions.LoginStep
+co/com/sofka/stepDefinitions/ProductsViewStep.java
+ co.com.sofka.stepDefinitions.ProductsViewStep
+co/com/sofka/stepDefinitions/PurchaseStep.java
+ co.com.sofka.stepDefinitions.PurchaseStep
+co/com/sofka/stepDefinitions/AddToCartStep.java
+ co.com.sofka.stepDefinitions.AddToCartStep
+co/com/sofka/stepDefinitions/LogoutStep.java
+ co.com.sofka.stepDefinitions.LogoutStep
 co/com/sofka/stepDefinitions/RemoveStep.java
  co.com.sofka.stepDefinitions.RemoveStep
+co/com/sofka/pages/HomePage.java
+ co.com.sofka.pages.HomePage
+co/com/sofka/controllers/ControllerHome.java
+ co.com.sofka.controllers.ControllerHome
+co/com/sofka/controllers/ControllerLogin.java
+ co.com.sofka.controllers.ControllerLogin

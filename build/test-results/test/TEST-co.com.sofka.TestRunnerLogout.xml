@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.com.sofka.TestRunnerLogout" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-19T04:12:23" hostname="DESKTOP-7NVI6VL" time="10.308">
+<testsuite name="co.com.sofka.TestRunnerLogout" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-19T18:12:25" hostname="DESKTOP-7NVI6VL" time="10.656">
   <properties/>
-  <testcase name="Logout exitoso" classname="co.com.sofka.TestRunnerLogout" time="10.308"/>
+  <testcase name="Logout exitoso" classname="co.com.sofka.TestRunnerLogout" time="10.656"/>
   <system-out><![CDATA[[Test worker] INFO  co.com.sofka.pages.LoginPage  - INICIANDO LOGOUT TEST...
 [Test worker] INFO  co.com.sofka.pages.LoginPage  - Realizando login...
 [Test worker] INFO  co.com.sofka.pages.LoginPage  - Click en el menu de opciones...
 [Test worker] INFO  co.com.sofka.pages.LoginPage  - Click en el boton logout...
 [Test worker] INFO  co.com.sofka.pages.LoginPage  - Comparando resultados...
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 15147
+  <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 8242
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 18, 2021 11:12:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 19, 2021 1:12:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
 ?[32m?[1m??[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m??[0m

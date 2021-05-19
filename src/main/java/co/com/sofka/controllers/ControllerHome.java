@@ -70,7 +70,6 @@ public class ControllerHome {
             assertEquals("Sauce Labs Bolt T-Shirt", cartPage.getProductName());
         } catch (NoSuchElementException exception) {
             infoLogger.error("ERROR, NO SE ENCONTRO EL ELEMENTO");
-            exception.printStackTrace();
         }
     }
 
@@ -81,7 +80,19 @@ public class ControllerHome {
             assertEquals("Login", loginPage.getLoginBtnText());
         } catch (NoSuchElementException exception) {
             infoLogger.error("ERROR, NO SE ENCONTRO EL ELEMENTO");
-            exception.printStackTrace();
+        }
+    }
+
+    public void validateIfTheProductWereUploaded(){
+        infoLogger.info("Comparando resultados...");
+        try{
+            HomePage homePage = new HomePage(driver);
+            ScreenCapture screenCapture = new ScreenCapture(driver);
+            screenCapture.takeScreen("testCaseProductsView","1.HomePageScreen.png");
+            assertEquals(6, homePage.getAmountOfDisplayedProducts());
+
+        } catch (NoSuchElementException exception) {
+            infoLogger.error("ERROR");
         }
     }
 }

@@ -1,6 +1,9 @@
 
-X	java:S125"<This block of commented-out lines of code should be removed.(¡çà³8©°æº—/
 d
 java:S1128"BRemove this unused import 'org.apache.log4j.PropertyConfigurator'.(ëó°³úÿÿÿÿ8©°æº—/
+Z
+java:S1128"8Remove this unused import 'org.apache.log4j.LogManager'.(Øê˜Ìüÿÿÿÿ8é¤éŒ˜/
+P
+java:S1128"4Remove this unused import 'org.apache.log4j.Logger'.(ñè½8é¤éŒ˜/
 L
 java:S1068"*Remove this unused "driver" private field.(š…ŒÅøÿÿÿÿ8ç¯£í–/

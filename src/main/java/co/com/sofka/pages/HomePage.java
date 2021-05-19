@@ -5,11 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class HomePage {
 
     private WebDriver driver;
+    private int numProductsDisplayed = 0;
 
     public HomePage(WebDriver driver){
         PageFactory.initElements(driver, this);
@@ -30,6 +32,9 @@ public class HomePage {
     @FindBy(id = "logout_sidebar_link")
     WebElement logoutBtn;
 
+    @FindBy(css = "img.inventory_item_img")
+    List<WebElement> imgProduct;
+
     public void clickAddToCartBtn(int index){
         productBtnList.get(index - 1).click();
     }
@@ -44,6 +49,15 @@ public class HomePage {
 
     public void clickLogoutBtn(){
         logoutBtn.click();
+    }
+
+    public int getAmountOfDisplayedProducts(){
+        for(WebElement product : imgProduct){
+            if(product.isDisplayed()){
+                numProductsDisplayed++;
+            }
+        }
+        return numProductsDisplayed;
     }
 
     public void addProductSuccess(){

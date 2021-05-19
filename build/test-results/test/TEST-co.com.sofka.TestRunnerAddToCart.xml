@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.com.sofka.TestRunnerAddToCart" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-19T04:11:13" hostname="DESKTOP-7NVI6VL" time="11.263">
+<testsuite name="co.com.sofka.TestRunnerAddToCart" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-19T18:11:00" hostname="DESKTOP-7NVI6VL" time="19.404">
   <properties/>
-  <testcase name="Agregar productos al carrito" classname="co.com.sofka.TestRunnerAddToCart" time="11.263"/>
+  <testcase name="Agregar productos al carrito" classname="co.com.sofka.TestRunnerAddToCart" time="19.404"/>
   <system-out><![CDATA[[Test worker] INFO  co.com.sofka.pages.LoginPage  - INICIANDO ADD TO CART TEST...
 [Test worker] INFO  co.com.sofka.pages.LoginPage  - Realizando login...
 [Test worker] INFO  co.com.sofka.pages.LoginPage  - Click en el boton Add to cart...
 [Test worker] INFO  co.com.sofka.pages.LoginPage  - Click en el carrito...
 [Test worker] INFO  co.com.sofka.pages.LoginPage  - Comparando resultados...
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 41407
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 37402
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 18, 2021 11:11:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 19, 2021 1:11:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
 ?[32m?[1m??[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m??[0m

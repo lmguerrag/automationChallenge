@@ -8,3 +8,5 @@ co/com/sofka/TestRunnerLogout.java
  co.com.sofka.TestRunnerLogout
 co/com/sofka/TestRunnerPurchase.java
  co.com.sofka.TestRunnerPurchase
+co/com/sofka/TestRunnerProductsView.java
+ co.com.sofka.TestRunnerProductsView

@@ -1,5 +1,17 @@
 
+t
+java:S1192"WDefine a constant instead of duplicating this literal "Ingresando username..." 3 times.(•ı’Ø8éÛô˜/
+x
+java:S1192#"VDefine a constant instead of duplicating this literal "1.LoginPageScreen.png" 3 times.(‚Àö€şÿÿÿÿ8éÛô˜/
+‹
+java:S1192"nDefine a constant instead of duplicating this literal "src/main/resources/logConfig/log4j.properties" 4 times.(¼ÆõÔ8£ˆñ˜/
+{
+java:S1192W"YDefine a constant instead of duplicating this literal "Comparando resultados..." 3 times.(Àãüÿÿÿÿÿ8ª‹‡‘˜/
+H
+java:S5960Z"+Remove this assertion from production code.(Óƒµ•8İß‰‘˜/
+y
+java:S1192!"WDefine a constant instead of duplicating this literal "Ingresando password..." 3 times.(ø©üçøÿÿÿÿ8éÛô˜/
 T
-java:S3416"2Update this logger to use "ControllerLogin.class".(˜ëÒºşÿÿÿÿ8ï¡âº—/
-M
-java:S59605"+Remove this assertion from production code.(ÖÊÅÑüÿÿÿÿ8Úêÿä—/
+java:S3416"2Update this logger to use "ControllerLogin.class".(˜ëÒºşÿÿÿÿ8ï¡âº—/
+}
+java:S1192%"[Define a constant instead of duplicating this literal "Click en el boton login..." 3 times.(Ëéí¼şÿÿÿÿ8éÛô˜/
