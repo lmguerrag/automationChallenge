@@ -1,14 +1,11 @@
 package co.com.sofka.stepDefinitions;
 
 import co.com.sofka.controllers.ControllerLogin;
-import co.com.sofka.pages.LoginPage;
+import co.com.sofka.utils.others.SelectDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -20,8 +17,11 @@ public class LoginStep {
 
     @Given("^que un usuario quiere ingresar a la tienda$")
     public void queUnUsuarioQuiereIngresarALaTienda() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        SelectDriver selectDriver = new SelectDriver(driver);
+        /**
+         * Seleccionar el browser entre 'chrome' o 'firefox'
+         */
+        driver = selectDriver.selectBrowser("chrome");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://www.saucedemo.com/");
@@ -38,4 +38,27 @@ public class LoginStep {
         driver.quit();
     }
 
+    @When("ingresa las credenciales siendo un usuario bloqueado")
+    public void ingresaLasCredencialesSiendoUnUsuarioBloqueado() {
+        ControllerLogin controllerLogin = new ControllerLogin(driver);
+        controllerLogin.testCaseLockedUser();
+    }
+    @Then("se le negara el acceso a la tienda")
+    public void seLeNegaraElAccesoALaTienda() {
+        ControllerLogin controllerLogin = new ControllerLogin(driver);
+        controllerLogin.validateTestCaseLoginLockedUser();
+        driver.quit();
+    }
+
+    @When("el usuario ingresa credenciales incorrectos")
+    public void elUsuarioIngresaCredencialesIncorrectos() {
+        ControllerLogin controllerLogin = new ControllerLogin(driver);
+        controllerLogin.testCaseLoginFail();
+    }
+    @Then("no podra acceder a la tienda")
+    public void noPodraAccederALaTienda() {
+        ControllerLogin controllerLogin = new ControllerLogin(driver);
+        controllerLogin.validateTestCaseLoginFail();
+        driver.quit();
+    }
 }

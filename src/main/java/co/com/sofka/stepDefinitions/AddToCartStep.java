@@ -3,6 +3,7 @@ package co.com.sofka.stepDefinitions;
 import co.com.sofka.controllers.ControllerLogin;
 import co.com.sofka.controllers.ControllerHome;
 import co.com.sofka.pages.LoginPage;
+import co.com.sofka.utils.others.SelectDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -23,8 +24,11 @@ public class AddToCartStep {
     @Given("un cliente quiere agregar productos que le gustan al carrito")
     public void un_cliente_quiere_agregar_productos_que_le_gustan_al_carrito() {
         PropertyConfigurator.configure("src/main/resources/logConfig/log4j.properties");
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        SelectDriver selectDriver = new SelectDriver(driver);
+        /**
+         * Seleccionar el browser entre 'chrome' o 'firefox'
+         */
+        driver = selectDriver.selectBrowser("chrome");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://www.saucedemo.com/");

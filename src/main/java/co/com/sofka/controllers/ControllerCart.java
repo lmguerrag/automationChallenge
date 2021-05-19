@@ -1,7 +1,6 @@
 package co.com.sofka.controllers;
 
 import co.com.sofka.dto.ClientDTO;
-import co.com.sofka.pages.HomePage;
 import co.com.sofka.pages.LoginPage;
 import co.com.sofka.pages.cartForm.CartPage;
 import co.com.sofka.pages.cartForm.CompletePage;
@@ -18,6 +17,7 @@ import org.openqa.selenium.WebDriver;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class ControllerCart {
 
@@ -34,7 +34,7 @@ public class ControllerCart {
         this.driver = driver;
     }
 
-    public void testCaseSuccessfulPurchase(boolean data){
+    public void testCaseSuccessfulPurchase(boolean data, String directoryScreen){
         PropertyConfigurator.configure("src/main/resources/logConfig/log4j.properties");
         ScreenCapture screenCapture = new ScreenCapture(driver);
         informationPage = new InformationPage(driver);
@@ -60,16 +60,16 @@ public class ControllerCart {
 
         infoLogger.info("Ingresando postalCode...");
         informationPage.setPostalField(postalCode);
-        screenCapture.takeScreen("testCaseSuccessfulPurchase","1.InformationPageScreen.png");
+        screenCapture.takeScreen("testCasePurchase\\" + directoryScreen,"1.InformationPageScreen.png");
 
         infoLogger.info("Click en el boton continue...");
         informationPage.clickContinueBtn();
-        screenCapture.takeScreen("testCaseSuccessfulPurchase","2.OverviewPageScreen.png");
+        screenCapture.takeScreen("testCasePurchase\\" + directoryScreen,"2.OverviewPageScreen.png");
 
         OverviewPage overviewPage = new OverviewPage(driver);
         infoLogger.info("Click en el boton Finish...");
         overviewPage.clickFinishBtn();
-        screenCapture.takeScreen("testCaseSuccessfulPurchase","3.CompletePageScreen.png");
+        screenCapture.takeScreen("testCasePurchase\\" + directoryScreen,"3.CompletePageScreen.png");
     }
 
     public void testCaseRemoveProductFromTheCart(){
@@ -106,11 +106,21 @@ public class ControllerCart {
         postalCode = clientDTOS.get(0).getPostalCode();
     }
 
-    public void ValidateTestCaseSuccessfulPurchase(){
+    public void validateTestCaseSuccessfulPurchase(){
         infoLogger.info("Comprobando resultados...");
         completePage = new CompletePage(driver);
-        completePage.getCompleteMessage();
         assertEquals("THANK YOU FOR YOUR ORDER",completePage.getCompleteMessage());
+    }
+
+    /**
+     * Al completar una compra sin productos en el carro, no deberia mostrar el mensaje "THANK YOU FOR YOUR ORDER"
+     * por lo que se utiliza este assert para verificar que el mensaje no se, pero se presenta,
+     * aceptando compras vacias, lo cual deberia ser corregido.
+     */
+    public void validateTestCasePurchaseWithoutProducts(){
+        infoLogger.info("Comprobando resultados...");
+        completePage = new CompletePage(driver);
+        assertFalse(completePage.getCompleteMessage().contains("THANK YOU FOR YOUR ORDER"));
     }
 
 }

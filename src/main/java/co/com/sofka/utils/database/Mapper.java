@@ -18,7 +18,7 @@ public class Mapper {
 
     public List<ClientDTO> createDTO(){
         List<ClientDTO> clientList = new ArrayList<>();
-        String query = "select first_name, last_name, postal_code from client_data ";
+        String query = "select first_name, last_name, postal_code from client_data";
 
         try {
             Statement statement = connect.connection.createStatement();

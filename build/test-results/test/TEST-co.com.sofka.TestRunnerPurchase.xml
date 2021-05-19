@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="co.com.sofka.TestRunnerPurchase" tests="2" skipped="0" failures="1" errors="0" timestamp="2021-05-19T04:10:39" hostname="DESKTOP-7NVI6VL" time="34.116">
+  <properties/>
+  <testcase name="comprar un producto" classname="co.com.sofka.TestRunnerPurchase" time="19.762"/>
+  <testcase name="compra de productos sin productos en el carro" classname="co.com.sofka.TestRunnerPurchase" time="14.353">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;false&gt; but was: &lt;true&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;false&gt; but was: &lt;true&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:40)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:35)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:210)
+	at co.com.sofka.controllers.ControllerCart.validateTestCasePurchaseWithoutProducts(ControllerCart.java:123)
+	at co.com.sofka.stepDefinitions.PurchaseStep.suCompraFueFallida(PurchaseStep.java:78)
+	at ✽.su compra fue fallida(file:///C:/Users/luisg/Desktop/Retos_Sofka/Sofka_automation_challenge/src/main/resources/features/Purchase.feature:17)
+</failure>
+  </testcase>
+  <system-out><![CDATA[[Test worker] INFO  co.com.sofka.pages.LoginPage  - INICIANDO PURCHASE TEST...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Realizando login...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Agregando productos al carrito...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Click en el boton checkout...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Obteniendo datos de la base de datos...
+Connection is successful to the database
+Connection closed 
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Ingresando firstName...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Ingresando lasttName...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Ingresando postalCode...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Click en el boton continue...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Click en el boton Finish...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Comprobando resultados...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - INICIANDO PURCHASE TEST...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Realizando login...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Moviendose al carro de compras...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Click en el boton checkout...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Obteniendo datos de la base de datos...
+Connection is successful to the database
+Connection closed 
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Ingresando firstName...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Ingresando lasttName...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Ingresando postalCode...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Click en el boton continue...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Click en el boton Finish...
+[Test worker] INFO  co.com.sofka.pages.LoginPage  - Comprobando resultados...
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 31823
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 18, 2021 11:10:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 47421
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+May 18, 2021 11:11:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+?[32m?[1m??[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m??[0m
+?[32m?[1m??[0m Activate publishing with one of the following:                                    ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m Environment variable:                            ?[36mCUCUMBER_PUBLISH_ENABLED?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m JUnit:                                           ?[36m@CucumberOptions?[0m(publish = ?[36mtrue?[0m) ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m More information at ?[36mhttps://reports.cucumber.io/docs/cucumber-jvm?[0m                 ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m Disable this message with one of the following:                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+]]></system-err>
+</testsuite>

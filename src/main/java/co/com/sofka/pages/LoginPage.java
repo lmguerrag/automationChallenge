@@ -11,7 +11,6 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 
     private WebDriver driver;
-    //private static Logger infoLogger = LogManager.getLogger(LoginPage.class);
 
     public LoginPage(WebDriver driver){
         PageFactory.initElements(driver, this);
@@ -25,6 +24,9 @@ public class LoginPage {
 
     @FindBy(id = "login-button")
     WebElement loginBtn;
+
+    @FindBy(css = "h3[data-test='error']")
+    WebElement errorMessage;
 
     public void setUsernameField(String username){
         usernameField.sendKeys(username);
@@ -40,6 +42,10 @@ public class LoginPage {
 
     public String getLoginBtnText(){
         return loginBtn.getAttribute("value");
+    }
+
+    public String getErrorMessage(){
+        return errorMessage.getText();
     }
 
     public void loginSuccessful(){

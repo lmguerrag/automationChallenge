@@ -10,6 +10,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ControllerLogin {
 
@@ -38,12 +39,70 @@ public class ControllerLogin {
         screenCapture.takeScreen("testCaseLogin\\" + userType,"2.HomePageScreen.png");
     }
 
+    public void testCaseLockedUser(){
+        PropertyConfigurator.configure("src/main/resources/logConfig/log4j.properties");
+        infoLogger.info("INICIANDO LOGIN FAIL TEST...");
+        LoginPage loginPage = new LoginPage(driver);
+        ScreenCapture screenCapture = new ScreenCapture(driver);
+
+        infoLogger.info("Ingresando username...");
+        loginPage.setUsernameField("locked_out_user");
+
+        infoLogger.info("Ingresando password...");
+        loginPage.setPasswordField("secret_sauce");
+        screenCapture.takeScreen("testCaseLogin\\locked","1.LoginPageScreen.png");
+
+        infoLogger.info("Click en el boton login...");
+        loginPage.clickLoginBtn();
+        screenCapture.takeScreen("testCaseLogin\\locked","2.LoginLockedPageScreen.png");
+    }
+
+    public void testCaseLoginFail(){
+        PropertyConfigurator.configure("src/main/resources/logConfig/log4j.properties");
+        infoLogger.info("INICIANDO LOGIN FAIL TEST...");
+        LoginPage loginPage = new LoginPage(driver);
+        ScreenCapture screenCapture = new ScreenCapture(driver);
+
+        infoLogger.info("Ingresando username...");
+        loginPage.setUsernameField("usuario_incorrecto_o_vacio");
+
+        infoLogger.info("Ingresando password...");
+        loginPage.setPasswordField("password_incorrecto_o_vacio");
+        screenCapture.takeScreen("testCaseLogin\\fail","1.LoginPageScreen.png");
+
+        infoLogger.info("Click en el boton login...");
+        loginPage.clickLoginBtn();
+        screenCapture.takeScreen("testCaseLogin\\fail","2.LoginFailPageScreen.png");
+    }
+
     public void loginSuccess(){
         PropertyConfigurator.configure("src/main/resources/logConfig/log4j.properties");
         LoginPage loginPage = new LoginPage(driver);
 
         infoLogger.info("Realizando login...");
         loginPage.loginSuccessful();
+    }
+
+    public void validateTestCaseLoginLockedUser(){
+        infoLogger.info("Comparando resultados...");
+        try{
+            LoginPage loginPage = new LoginPage(driver);
+            assertEquals("Epic sadface: Sorry, this user has been locked out.", loginPage.getErrorMessage());
+        } catch (NoSuchElementException exception) {
+            infoLogger.error("ERROR");
+            exception.printStackTrace();
+        }
+    }
+
+    public void validateTestCaseLoginFail(){
+        infoLogger.info("Comparando resultados...");
+        try{
+            LoginPage loginPage = new LoginPage(driver);
+            assertTrue(loginPage.getErrorMessage().contains("Epic sadface"));
+        } catch (NoSuchElementException exception) {
+            infoLogger.error("ERROR");
+            exception.printStackTrace();
+        }
     }
 
     public void validateTestCaseLoginSuccess(){

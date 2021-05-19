@@ -55,6 +55,14 @@ public class ControllerHome {
         homePage.addProductSuccess();
     }
 
+    public void moveToCart(){
+        PropertyConfigurator.configure("src/main/resources/logConfig/log4j.properties");
+        HomePage homePage = new HomePage(driver);
+
+        infoLogger.info("Moviendose al carro de compras...");
+        homePage.clickCartBtn();
+    }
+
     public void validateTestCaseAddToCart(){
         infoLogger.info("Comparando resultados...");
         try{
